@@ -1,2 +1,2 @@
 # mapbook_ak
-projekt realizowane w ramach zajęć ppyt
+projekt realizowane w ramach przedmiotu ppyt

@@ -6,8 +6,11 @@ users: list = [
     {'username': 'elizka','location':'radom','posts':3,'usermessage':['życzenia3', 'kocham legie']},
     {'username': 'filip','location': 'dęblin ','posts': 4, 'usermessage': ['życzenia4', 'kocham legie', 'sprzedam opla3', 'kiwi3']},
 ]
+def read_data(users_data: list)->None:
+    for user in users_data:
+        print(
+            f'twój znajomy {user['username']} z miejscowości {user["location"]} opublikował {user['posts']}  wiadomości. Ostatnia wiadomość {user['usermessage'][-1]}')
 
-for user in users[1:]:
-    print(f'twój znajomy {user['username']} z miejscowości {user["location"]} opublikował {user['posts']}  wiadomości. Ostatnia wiadomość {user['usermessage'][-1]}')
 
-#     twój znajomy filip z miejscowości dęblin opublikował 1 post o treści: życzenia
+
+read_data(users[1:])
